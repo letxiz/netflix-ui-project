@@ -1,4 +1,4 @@
-
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +7,18 @@
 }
 
 
+/* ================= BODY ================= */
 body {
-  background: linear-gradient(
-    to bottom,
-    #000000 0%,
-    #1a0000 50%,
-    #4d0000 100%
-  );
-  color: white;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #1a0000 0%, #000000 80%);
+    color: white;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    min-height: 100vh;
+    line-height: 1.5;
 }
 
+
+/* ================= SPLASH ================= */
 .splash {
     position: fixed;
     inset: 0;
@@ -33,16 +33,35 @@ body {
     justify-content: center;
 
     gap: 20px;
-
     z-index: 999;
 }
 
 .logo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 12rem;
+    font-size: 12vw;
     letter-spacing: 6px;
     color: #e50914;
 }
+
+.enter-btn {
+    padding: 14px 40px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enter-btn:hover {
+    background: #f40612c8;
+    transform: scale(1.05);
+}
+
+
+/* ================= TRANSITION ================= */
 .transition {
     position: fixed;
     inset: 0;
@@ -53,7 +72,6 @@ body {
     justify-content: center;
 
     z-index: 999;
-
     opacity: 0;
     pointer-events: none;
 }
@@ -63,98 +81,37 @@ body {
     pointer-events: all;
 }
 
-.transition .logo {
-    font-size: 5rem;
-    color: #e50914;
-
-    transform: scale(1);
-}
-
-.transition.zoom .logo {
-    animation: zoomNetflix 1.5s ease forwards;
-}
-
-@keyframes zoomNetflix {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-
-    40% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    70% {
-        transform: scale(3);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(8);
-        opacity: 0;
-    }
-}
-
-/* ANIMAÇÃO DA LUZ */
-@keyframes shine {
-    to {
-        left: 100%;
-    }
-}
-
-
-@keyframes netflixIntro {
-    0% {
-        transform: scale(0.3);
-        opacity: 0;
-        letter-spacing: 20px;
-    }
-
-    40% {
-        transform: scale(1.2);
-        opacity: 1;
-    }
-
-    70% {
-        transform: scale(1);
-        letter-spacing: 8px;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
 .hidden {
     opacity: 0;
     pointer-events: none;
 }
 
 
-header {
-  display: flex;
-  align-items: center;
-  height: 70px;
-  color: #e50914; 
-  font-family: 'Arial Black', Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  padding: 0 40px;
-  letter-spacing: 2px;
+/* ================= APP ================= */
+.app {
+    /* container principal */
 }
 
 
+/* ================= HEADER ================= */
+header {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    z-index: 10;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    letter-spacing: 1px;
+    color: #e50914;
+}
+
+
+/* ================= MAIN ================= */
 main {
-    min-height: calc(100vh - 70px);
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -163,13 +120,13 @@ main {
 }
 
 
+/* ================= SECTION ================= */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
-
 
 h2 {
     font-size: 3.2rem;
@@ -180,6 +137,7 @@ h2 {
 }
 
 
+/* ================= PROFILES ================= */
 .profiles {
     display: flex;
     gap: 40px;
@@ -188,7 +146,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-
 .profile {
     width: 200px;
     text-align: center;
@@ -196,13 +153,11 @@ h2 {
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-
 .profile figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 .profile img {
     width: 100%;
@@ -213,7 +168,6 @@ h2 {
     transition: transform 0.25s ease, border 0.25s ease;
 }
 
-
 .profile figcaption {
     margin-top: 12px;
     color: #b3b3b3;
@@ -222,6 +176,7 @@ h2 {
 }
 
 
+/* ================= HOVER ================= */
 .profile:hover {
     transform: scale(1.1);
 }
@@ -234,7 +189,6 @@ h2 {
     border: 3px solid white;
 }
 
-
 .profiles:hover .profile {
     opacity: 0.5;
 }
@@ -244,6 +198,7 @@ h2 {
 }
 
 
+/* ================= ADD PROFILE ================= */
 .add-profile {
     display: flex;
     flex-direction: column;
@@ -251,12 +206,10 @@ h2 {
     width: 200px;
 }
 
-
 button {
     background: none;
     border: none;
 }
-
 
 .add-box {
     width: 100%;
@@ -274,13 +227,11 @@ button {
     transition: background-color 0.25s ease, border 0.25s ease;
 }
 
-
 .add-box span {
     font-size: 50px;
     color: #777;
     transition: color 0.25s ease;
 }
-
 
 .add-profile p {
     margin-top: 12px;
@@ -288,7 +239,6 @@ button {
     color: #777;
     transition: color 0.25s ease;
 }
-
 
 .add-profile:hover .add-box {
     background-color: #333;
@@ -301,6 +251,7 @@ button {
 }
 
 
+/* ================= BUTTON ================= */
 .bt-manage-profile {
     margin-top: 20px;
     padding: 14px 40px;
@@ -324,64 +275,21 @@ button {
 }
 
 button:focus {
-     outline: 2px solid #e50914;
+    outline: 2px solid #e50914;
     outline-offset: 3px;
 }
-.enter-btn {
-    padding: 14px 40px;
-
-    background: #e50914;
-    color: white;
-
-    border: none;
-    border-radius: 4px;
-
-    font-size: 1.2rem;
-    font-weight: bold;
-
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.enter-btn:hover {
-    background: #f40612c8;
-    transform: scale(1.05);
-}
-
-.enter-btn:hover {
-    background: #cec5c5;
-}
-.transition {
-    position: fixed;
-    inset: 0;
-    background: black;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    z-index: 998;
-
-    opacity: 0;
-}
-
-/* quando ativa */
-.transition.active {
-    opacity: 1;
-}
-
-/* animação da logo */
-.transition .logo {
-    font-size: 5rem;
-    color: #e50914;
-    animation: zoom 1s ease;
-}
 
 
+/* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
 
     body {
         padding: 20px;
+    }
+
+    header {
+        top: 15px;
+        left: 20px;
     }
 
     h2 {
@@ -390,21 +298,26 @@ button:focus {
 
     .profiles {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         justify-items: center;
     }
 
-    .profile {
-        width: 120px;
+    .profile,
+    .add-profile {
+        width: 100%;
+        max-width: 140px;
     }
 
     .profile img,
     .add-box {
-        height: 120px;
+        width: 100%;
+        height: auto;
     }
 
-    .profile figcaption {
+    .profile figcaption,
+    .add-profile p {
         font-size: 0.9rem;
+        text-align: center;
     }
 }
