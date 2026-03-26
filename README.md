@@ -83,5 +83,4 @@ cd Netflix
 ## 💡 Sobre a Imersão
 
 Projeto desenvolvido durante a Imersão Front-End da Alura, com foco em prática, evolução contínua e construção de portfólio.
-cd Netflix
 
