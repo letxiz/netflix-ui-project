@@ -1,47 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>
-            NETFLIX
-        </h1>
-    </header>
 
-    <main>
-        <h1>Quem está assistindo?</h1>
+    
+    <div class="splash">
+        <h1 class="logo">NETFLIX</h1>
+        <button class="enter-btn">Entrar</button>
+    </div>
 
-        <div class="profiles">
+    <div class="transition hidden">
+        <h1 class="logo">NETFLIX</h1>
+    </div>
 
-            <div class="profile">
-                <img src="assets/capa1.avif" alt="Maria">
-                <p>Maria</p>
-            </div>
+    <audio id="netflix-sound" src="assets/tudum.mp3"></audio> 
 
-            <div class="profile">
-                <img src="assets/capa6.jpg" alt="Leticinha">
-                <p>Leticinha</p>
-            </div>
+    <div class="app hidden">
 
-            <div class="profile">
-                <img src="assets/capa5.jpg" alt="Pedro">
-                <p>Pedro</p>
-            </div>
-            
-            <div class="profile add-profile">
-                <div class="add-box">
-                    <span>+</span>
-                </div>
-                <p>Adicionar perfil</p>
-            </div>
+        <header>
+            <h1>Netflix</h1>
+        </header>
 
-        </div>
-    </main>
+        <main>
+            <section aria-labelledby="titulo-perfis">
+                <h2 id="titulo-perfis">Quem está assistindo?</h2>
+
+                <ul class="profiles">
+                    
+                    <li class="profile">
+                        <figure>
+                            <img src="assets/capa1.avif" alt="Perfil de Maria">
+                            <figcaption>Maria</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="profile">
+                        <figure>
+                            <img src="assets/capa6.jpg" alt="Perfil de Leticinha">
+                            <figcaption>Leticinha</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="profile">
+                        <figure>
+                            <img src="assets/capa5.jpg" alt="Perfil de Pedro">
+                            <figcaption>Pedro</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="profile add-profile">
+                        <button type="button" class="add-box" aria-label="Adicionar novo perfil">
+                            <span>+</span>
+                        </button>
+                        <p>Adicionar perfil</p>
+                    </li>
+                </ul>         
+
+                <button class="bt-manage-profile">
+                    Gerenciar perfis
+                </button>
+
+            </section>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
