@@ -1,86 +1,83 @@
-
 # 🎬 Netflix UI Clone
 
-Projeto desenvolvido durante a **Imersão Front-End da Alura**, com o objetivo de recriar uma interface inspirada na Netflix utilizando HTML, CSS e (em breve) JavaScript.
+Projeto desenvolvido durante a **Imersão Front-End da Alura**, com o objetivo de recriar uma interface inspirada na Netflix utilizando **HTML, CSS e JavaScript**, com foco em animações e experiência do usuário.
 
 -----
 
 ## 🚀 Sobre o Projeto
 
-Este projeto consiste na construção de uma interface inspirada na Netflix, com foco inicial na **tela de seleção de perfis**. Foram aplicados conceitos de layout moderno, responsividade e interatividade para simular a experiência de usuário de uma das maiores plataformas de streaming do mundo.
+Este projeto simula a experiência inicial da Netflix, incluindo:
+
+- 🎬 **Tela de abertura (Splash Screen)** com animação
+- 🔊 **Efeito sonoro "TUDUM"**
+- 🎥 **Transição cinematográfica entre telas**
+- 👤 **Tela de seleção de perfis**
+
+O objetivo foi ir além do layout, explorando também **interatividade, animações e fluidez de navegação**, aproximando o projeto de uma aplicação real.
 
 -----
 
 ## 🛠️ Tecnologias Utilizadas
 
-  * **HTML5**: Estruturação semântica do conteúdo.
-  * **CSS3**: Estilização, Flexbox, Grid e animações.
-  * **JavaScript**: (Em breve 🚧) para interatividade dinâmica.
+- **HTML5** → Estrutura semântica e acessível  
+- **CSS3** → Flexbox, Grid, animações e efeitos visuais  
+- **JavaScript** → Manipulação do DOM, eventos e controle de transições  
 
 -----
 
 ## 🎯 Funcionalidades
 
-  * 🎭 **Seleção de Perfis**: Interface intuitiva para escolha de usuário.
-  * ✨ **Efeitos Hover**: Transições e interações visuais suaves nos cards.
-  * 📱 **Responsividade**: Layout adaptável para diferentes tamanhos de tela.
-  * 🎨 **Design Fiel**: Estética baseada no Guia de Estilo oficial da plataforma.
+- 🎬 **Splash Screen Animada**
+  - Logo da Netflix com animação de entrada
+  - Tela inicial com botão "Entrar"
+
+- 🔊 **Integração de Áudio**
+  - Reprodução do som "TUDUM"
+  - Sincronização com transições visuais
+
+- 🎥 **Transição Cinematográfica**
+  - Tela intermediária com animação de zoom
+  - Efeito de entrada suave para a tela de perfis
+
+- 👤 **Seleção de Perfis**
+  - Cards interativos com efeito hover
+  - Destaque visual no perfil selecionado
+
+- 📱 **Responsividade**
+  - Layout adaptado para diferentes dispositivos
 
 -----
 
 ## 📚 Aprendizados
 
-Durante o desenvolvimento deste projeto, foram colocados em prática conceitos fundamentais de desenvolvimento web:
+Durante o desenvolvimento, foram aplicados conceitos importantes como:
 
-  * Estruturação de páginas com foco em acessibilidade.
-  * Domínio de **Flexbox** e **CSS Grid** para layouts complexos.
-  * Uso de **Media Queries** para garantir uma experiência mobile-first.
-  * Organização de código seguindo boas práticas de clean code.
+- Manipulação do DOM com **JavaScript**
+- Controle de tempo com `setTimeout`
+- Sincronização entre **áudio e animações**
+- Uso de **pseudo-elementos e keyframes**
+- Organização de código com boas práticas
+- Criação de experiências mais próximas de aplicações reais
 
 -----
 
 ## 🔗 Deploy
 
-Você pode visualizar o projeto em execução através do link abaixo:  
-👉 [Netflix UI Project - Live Demo](https://letxiz.github.io/netflix-ui-project/)
+👉 Acesse o projeto online:  
+https://letxiz.github.io/netflix-ui-project/
 
 -----
 
 ## ▶️ Como Executar o Projeto
-
-Para rodar o projeto localmente, siga estes passos:
 
 ```bash
 # Clone o repositório
 git clone https://github.com/letxiz/netflix-ui-project.git
 
 # Acesse a pasta do projeto
-cd Netflix
-
-# Abra o arquivo index.html no seu navegador preferido
 ```
-
------
-
-## 🌱 Próximos Passos
-
-  * [ ] Criar a tela principal de filmes (Home estilo Netflix) 🎬
-  * [ ] Implementar carrossel de conteúdos com Swiper.js ou CSS Scroll Snap 🎞️
-  * [ ] Adicionar lógica de troca de perfis com JavaScript ⚡
-  * [ ] Melhorar os índices de acessibilidade (Aria-labels e navegação via teclado) ♿
-
------
-
 ## 💡 Sobre a Imersão
 
-Este repositório faz parte da **Imersão Front-End da Alura**, um programa intensivo focado em aprendizado prático, transformando teoria em projetos reais para fortalecer o portfólio de desenvolvedores em início de carreira.
-
------
-
-## 👩‍💻 Autora
-
-Feito com dedicação por **Letícia Alves** 💙  
-Sinta-se à vontade para se conectar comigo ou contribuir com o projeto\!
-
------
+Projeto desenvolvido durante a Imersão Front-End da Alura, com foco em prática, evolução contínua e construção de portfólio.
+cd Netflix
 
