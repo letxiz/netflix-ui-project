@@ -207,7 +207,7 @@ button {
 
 .add-box {
     width: 100%;
-    height: 200px;
+    height: 145px;
 
     display: flex;
     align-items: center;
@@ -294,9 +294,12 @@ button:focus {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        justify-items: center;
     }
 
-    .profile {
+    .profile,
+    .add-profile {
+        width: 100%;
         max-width: 140px;
     }
 
@@ -304,5 +307,4 @@ button:focus {
         width: 100%;
         aspect-ratio: 1 / 1;
     }
-
 }
